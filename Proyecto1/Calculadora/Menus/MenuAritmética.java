@@ -8,11 +8,12 @@ public class MenuAritmética {
 	 * Entradas:Ninguna	
 	 * Salidas:Muestra el menu en pantalla
 	 * Precondiciones:Ninguna
-	 * Postcondiciones:Ser veran en pantalla 7 opciones
+	 * Postcondiciones:Ser veran en pantalla 8 opciones
 	 * */
-	public void menuAritmetica(){
+	public static void menuAritmetica(){
 		
-		System.out.println("\n1--SUMAR");
+		System.out.println("\n0--VOLVER");
+		System.out.println("1--SUMAR");
 		System.out.println("2--RESTAR");
 		System.out.println("3--MULTIPLICAR");
 		System.out.println("4--DIVIDIR");

@@ -16,6 +16,7 @@ public class MenuPrincipal {
 		System.out.println("------------------------------");
 		System.out.println("1--OPERACIONES ARITMÉTICAS");
 		System.out.println("2--OPERACIONES TRIGONOMÉTRICAS");
+		System.out.println("\n0--SALIR");
 		
 		
 		

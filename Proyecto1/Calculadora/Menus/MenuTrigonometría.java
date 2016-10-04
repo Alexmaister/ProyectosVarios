@@ -10,9 +10,10 @@ public class MenuTrigonometría {
 	 * Precondiciones:Ninguna
 	 * Postcondiciones:Ser veran en pantalla 6 opciones
 	 * */
-	public void menuTrigonometría(){
+	public static void menuTrigonometría(){
 		
-		System.out.println("\n1--SENO");
+		System.out.println("\n0--VOLVER");
+		System.out.println("1--SENO");
 		System.out.println("2--COSENO");
 		System.out.println("3--TANGENTE");
 		System.out.println("4--SECANTE");

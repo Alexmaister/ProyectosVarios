@@ -28,12 +28,12 @@ public class ValidarMenuPrincipal {
 		opcion=teclado.nextInt();
 		
 		//si la opcion no se encuentra en el menu mostrar nuevo mensage
-		if(opcion<1 || opcion>2){
+		if(opcion<0 || opcion>2){
 			
 			System.out.println("Elija una opcion correcta");
 		}
 		
-		}while(opcion<1 || opcion>2);
+		}while(opcion<0 || opcion>2);
 		
 		//cerramos flujo del teclado
 		teclado.close();
