@@ -1,15 +1,16 @@
 package Main;
 
-
-import java.util.*;
-
 import Menus.*;
 import Validaciones.*;
 
 /*ANALISIS:
  * 
  * Programa que simulara una calculadora con operaciones tanto aritmeticas como trigonometricas
- * Entradas:Numeros con los que realizar operaciones 
+ * 
+ * Entradas:Numeros con los que realizar operaciones
+ * 
+ * Salidas:
+ * 
  * */
 public class Main {
 
