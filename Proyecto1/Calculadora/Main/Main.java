@@ -10,7 +10,7 @@ import Validaciones.*;
  * 
  * Salidas:Se mostraran por pantalla el resultado de todas las operaciones realizadas
  * 
- * Precondiciones:Ninguna
+ * Precondiciones:Los modulos se encargaran de las precondiciones
  * 
  * Postcondiciones:El resultado sera un numero real
  * 
@@ -39,6 +39,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	SUMAR
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  * 
  * 					OPCION 2
@@ -46,6 +47,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	RESTAR
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 3
@@ -53,6 +55,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	MULTIPLICAR
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR 
  * 						MIENTRAS SEGUIR SEA SI
  * 
  * 					OPCION 4
@@ -60,6 +63,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	DIVIDIR
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR 
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 5
@@ -67,6 +71,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	RAIZ
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 6
@@ -74,6 +79,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	POTENCIA
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 7
@@ -81,6 +87,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	SUMATORIO
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  		
  * 			SINO SI OPCION ES 2
@@ -93,6 +100,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	SENO
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  * 
  * 					OPCION 2
@@ -100,6 +108,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	COSENO
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR 
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 3	
@@ -107,6 +116,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	TANGENTE
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 4
@@ -114,6 +124,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	SECANTE
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 					OPCION 5
@@ -121,6 +132,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	COSECANTE
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  * 
  * 					OPCION 6
@@ -128,6 +140,7 @@ import Validaciones.*;
  * 						HACER
  * 						 	COTANGENTE
  * 						 	MOSTRAR RESULTADO
+ * 							VALIDAR SEGUIR
  * 						MIENTRAS SEGUIR SEA SI
  *  
  * 			FIN SINO
