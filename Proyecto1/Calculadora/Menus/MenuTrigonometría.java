@@ -18,7 +18,7 @@ public class MenuTrigonometría {
 		System.out.println("3--TANGENTE");
 		System.out.println("4--SECANTE");
 		System.out.println("5--COSECANTE");
-		System.out.println("6--PCOTANGENTE");
+		System.out.println("6--COTANGENTE");
 		
 	
 	}
