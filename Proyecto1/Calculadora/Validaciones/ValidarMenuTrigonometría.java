@@ -35,8 +35,7 @@ public class ValidarMenuTrigonometría {
 			
 		}while(opcionT<0||opcionT>7);
 		
-		//cerramos el flujo de teclado
-		//teclado.close();
+		
 		
 		return opcionT;
 	}

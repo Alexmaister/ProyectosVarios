@@ -33,8 +33,7 @@ public class ValidarMenuAritmética {
 			
 		}while(opcionA<0||opcionA>7);
 		
-		//cerramos el flujo de teclado
-		//teclado.close();
+	
 		
 		return opcionA;
 	}
