@@ -35,8 +35,8 @@ public class ValidarMenuPrincipal {
 		
 		}while(opcion<0 || opcion>2);
 		
-		//cerramos flujo del teclado
-		teclado.close();
+		/*//cerramos flujo del teclado
+		teclado.close();*/
 		
 		return opcion;
 	}
