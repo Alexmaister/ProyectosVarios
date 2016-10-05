@@ -2,7 +2,7 @@ package Validaciones;
 
 import java.util.Scanner;
 
-public class ValidarMenuTrigonometría {
+public class ValidarMenuTrigonometria {
 	
 	/*CABEZERA:int validarMenuTrigonometria()
 	 * Descripcion:Metodo que valida la opcin elegida del menu de trigonometria
@@ -18,7 +18,7 @@ public class ValidarMenuTrigonometría {
 		//abrimos el flujo de teclado
 		Scanner teclado=new Scanner(System.in);
 		
-		System.out.println("Elija una opción");
+		System.out.println("Elija una opciï¿½n");
 		
 		//hacer mientras la opcion elegida no este en el menu
 		do{

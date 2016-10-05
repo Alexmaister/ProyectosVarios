@@ -1,9 +1,9 @@
 package Validaciones;
 import java.util.*;
-public class ValidarMenuAritmética {
+public class ValidarMenuAritmetica {
 	
 	/*CABEZERA:int validarMenuA
-	 * Descripcion:Metodo para validar el menu de aritmética
+	 * Descripcion:Metodo para validar el menu de aritmï¿½tica
 	 * Entradas:Ninguna
 	 * Salidas:Opcion elegida
 	 * Precondiciones:El menu de aritmetica tendra 8 opciones
@@ -16,7 +16,7 @@ public class ValidarMenuAritmética {
 		Scanner teclado=new Scanner(System.in);
 		int opcionA=0;
 		
-		System.out.println("Elija una opción");
+		System.out.println("Elija una opciï¿½n");
 		
 		//hacer mientras la opcion elegida no este en el menu
 		do{

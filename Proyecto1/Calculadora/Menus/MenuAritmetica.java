@@ -1,10 +1,10 @@
 package Menus;
 
-public class MenuAritmética {
+public class MenuAritmetica {
 	
 	
 	/*CABEZERA:void menuAritmetica()
-	 * Descripcion:Metdo que muestra por pantalla el menu de operaciones aritmeticas
+	 * Descripcion:Metodo que muestra por pantalla el menu de operaciones aritmeticas
 	 * Entradas:Ninguna	
 	 * Salidas:Muestra el menu en pantalla
 	 * Precondiciones:Ninguna

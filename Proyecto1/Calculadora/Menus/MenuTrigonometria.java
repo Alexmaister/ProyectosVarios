@@ -1,6 +1,6 @@
 package Menus;
 
-public class MenuTrigonometría {
+public class MenuTrigonometria {
 	
 	
 	/*CABEZERA:void menuAritmetica()
@@ -10,7 +10,7 @@ public class MenuTrigonometría {
 	 * Precondiciones:Ninguna
 	 * Postcondiciones:Ser veran en pantalla 6 opciones
 	 * */
-	public static void menuTrigonometría(){
+	public static void menuTrigonometria(){
 		
 		System.out.println("\n0--VOLVER");
 		System.out.println("1--SENO");
