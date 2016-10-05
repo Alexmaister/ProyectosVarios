@@ -2,8 +2,6 @@ package Main;
 import Menus.*;
 import Validaciones.*;
 
-//Configurando git en Pc de casa
-
 /*ASIGNACION DE MODULOS
  * 
  * ALE: SUMAR, DIVIDIR, SUMATORIO, TANGENTE, COTANGENTE
