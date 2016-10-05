@@ -7,7 +7,7 @@ public class ValidarMenuAritmética {
 	 * Entradas:Ninguna
 	 * Salidas:Opcion elegida
 	 * Precondiciones:El menu de aritmetica tendra 8 opciones
-	 * Postcondiciones:Se devolvera la opcion elegida dentro del menu...
+	 * Postcondiciones:Se devolvera la opcion elegida dentro del menu
 	 * */
 	public static int validarMenuA(){
 		
