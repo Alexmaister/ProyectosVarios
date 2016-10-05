@@ -16,11 +16,11 @@ import Validaciones.*;
  * 
  * Programa que simulara una calculadora con operaciones tanto aritmeticas como trigonometricas
  * 
- * Entradas:Numeros con los que realizar operaciones
+ * Entradas:Opciones de menu y numeros con los que realizar operaciones
  * 
- * Salidas:Se mostraran por pantalla el resultado de todas las operaciones realizadas
+ * Salidas:Se mostraran por pantalla el resultado de las operaciones que se realizen
  * 
- * Precondiciones:Los modulos se encargaran de las precondiciones
+ * Precondiciones:Los datos introducidos deben ser numeros enteros o reales
  * 
  * Postcondiciones:El resultado sera un numero real
  * 
