@@ -3,7 +3,7 @@ import Menus.*;
 import Validaciones.*;
 
 
-//la puta es mi pastor
+//El señor es mi pastor
 
 /*ANALISIS:
  * 
