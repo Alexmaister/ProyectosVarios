@@ -2,9 +2,6 @@ package Main;
 import Menus.*;
 import Validaciones.*;
 
-
-//El señor es mi pastor
-
 /*ANALISIS:
  * 
  * Programa que simulara una calculadora con operaciones tanto aritmeticas como trigonometricas
