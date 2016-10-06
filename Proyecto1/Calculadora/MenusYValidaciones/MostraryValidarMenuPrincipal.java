@@ -12,19 +12,20 @@ public class MostraryValidarMenuPrincipal {
 	 * Postcondiciones:Ser veran en pantalla 2 opciones y devolvera la opcion elegida
 	 * */
 		
-	public static  int mostraryValidarMenuPrincipal(){
+	public static int mostraryValidarMenuPrincipal(){
 		
 		System.out.println("MENU DE CALCULADORA CIENTIFICA");
 		System.out.println("------------------------------");
-		System.out.println("1--OPERACIONES ARITMÉTICAS");
-		System.out.println("2--OPERACIONES TRIGONOMÉTRICAS");
+		System.out.println("1--OPERACIONES ARITMETICAS");
+		System.out.println("2--OPERACIONES TRIGONOMETRICAS");
 		System.out.println("\n0--SALIR");
 		
 				//abrimos flujo del teclado
+				@SuppressWarnings("resource")
 				Scanner teclado=new Scanner(System.in);
 				int opcion=0;
 				
-				System.out.println("Escoja una opción");
+				System.out.println("Escoja una opcion");
 				
 				//hacer mientras la opcion no este entre las disponibles 
 				do{

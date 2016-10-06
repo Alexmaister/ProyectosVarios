@@ -24,10 +24,11 @@ public class MostraryValidarMenuAritmetica {
 		System.out.println("7--SUMATORIO");
 		
 				//abrimos el flujo de teclado
+				@SuppressWarnings("resource")
 				Scanner teclado=new Scanner(System.in);
 				int opcionA=0;
 				
-				System.out.println("Elija una opci�n");
+				System.out.println("Elija una opcion");
 				
 				//hacer mientras la opcion elegida no este en el menu
 				do{

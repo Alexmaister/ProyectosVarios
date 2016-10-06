@@ -67,8 +67,30 @@ import MenusYValidaciones.*;
 public class Main {
 
 	public static void main(String[]args){
-	 
-
+		
+		/*MostraryValidarMenuPrincipal MostrarMenuPrincipal = new MenusYValidaciones.MostraryValidarMenuPrincipal();
+		MostraryValidarMenuAritmetica MostrarMenuAritmetica = new MenusYValidaciones.MostraryValidarMenuAritmetica();
+		MostraryValidarMenuTrigonometria MostrarMenuTrigonometria = new MenusYValidaciones.MostraryValidarMenuTrigonometria();*/
+		int opcion = 0;
+		@SuppressWarnings("unused")
+		int opcionSubmenu = 0;      
+				
+		do{
+			opcion = MostraryValidarMenuPrincipal.mostraryValidarMenuPrincipal();
+			
+			if(opcion != 0){
+				switch(opcion){
+				case 1:
+					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					break;
+				case 2: 
+					opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+					break;
+				}
+			}
+			
+		}while(opcion!=0);
+		
 		
 	}
 
