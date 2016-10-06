@@ -1,5 +1,5 @@
 package Main;
-import Menus.*;
+import MenusYValidaciones.*;
 import Validaciones.*;
 
 /*ASIGNACION DE MODULOS
