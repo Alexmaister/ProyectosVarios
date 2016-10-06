@@ -23,7 +23,7 @@ import Validaciones.*;
  *     * Calcular division
  * 
  * Entradas:
- *     * Opciones de de interacción con el menu
+ *     * Opciones de  interacciOn con el menu
  *     * Numeros con los que se realizaran las operaciones
  * 
  * Salidas:
@@ -38,12 +38,37 @@ import Validaciones.*;
  * 
  * PSEUDOCODIGO GENERALIZADO:
  * 
+ * INICIO
+ * 
+ * 	REPETIR
+ * 
+ * 		MOSTRAR Y VALIDAR MENU PRINCIPAL
+ * 
+ * 		SI	OPCION ES DISTINTO A SALIR
+ * 
+ * 			SEGUN OPCION
+ * 
+ * 				CASO 1:
+ * 
+ * 					OPERACIONES ARITMETICAS
+ * 
+ * 				CASO 2:
+ * 
+ * 					OPRACIONES TRIGONOMETRICAS
+ * 
+ * 			FIN SEGUN
+ * 
+ * 		FIN SI
+ * 
+ * 	MIENTRAS OPCION NO SEA SALIR
+ * 
+ * FIN
  * */
 public class Main {
 
 	public static void main(String[]args){
 	 
-		System.out.println("hola");
+
 		
 	}
 
