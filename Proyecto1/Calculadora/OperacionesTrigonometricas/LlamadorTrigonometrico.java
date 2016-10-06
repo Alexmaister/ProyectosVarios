@@ -23,8 +23,10 @@ public class LlamadorTrigonometrico {
 	public static void llamadorTrigonometrico(){
 	
 	int opcion = 1;
-	
+	do{
 	opcion = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+	}while(opcion!=0);
+	
 	}
 
 }

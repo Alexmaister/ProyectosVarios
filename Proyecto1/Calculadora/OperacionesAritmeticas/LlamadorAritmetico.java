@@ -31,9 +31,11 @@ public class LlamadorAritmetico {
 	public static void llamadorAritmetico(){
 		
 		int opcion = 1;
-		
+		do{
+			
 		opcion = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
 		
+		}while(opcion!=0);
 	}
 
 }
