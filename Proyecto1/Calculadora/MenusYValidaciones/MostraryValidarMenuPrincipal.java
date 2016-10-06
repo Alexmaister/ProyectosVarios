@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MostraryValidarMenuPrincipal {
 	
-	/*CABEZERA:int menuPrincipal()
+	/*CABEZERA:int mostraryValidarMenuPrincipal()
 	 * Descripcion:Metodo que muestra por pantalla el menu principal y valida la opcion 
 	 * Entradas:Lee opcion de teclado	
 	 * Salidas:Muestra el menu en pantalla y devuelve la opcion elegida
@@ -12,7 +12,7 @@ public class MostraryValidarMenuPrincipal {
 	 * Postcondiciones:Ser veran en pantalla 2 opciones y devolvera la opcion elegida
 	 * */
 		
-	public static  int menuPrincipal(){
+	public static  int mostraryValidarMenuPrincipal(){
 		
 		System.out.println("MENU DE CALCULADORA CIENTIFICA");
 		System.out.println("------------------------------");
