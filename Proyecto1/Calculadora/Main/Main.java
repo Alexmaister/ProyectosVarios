@@ -1,5 +1,7 @@
 package Main;
 import MenusYValidaciones.*;
+import OperacionesAritmeticas.*;
+import OperacionesTrigonometricas.*;
 
 
 /*ASIGNACION DE MODULOS
@@ -48,42 +50,9 @@ import MenusYValidaciones.*;
   
  			SEGUN OPCION
   
-  				CASO 1:	OPERACIONES ARITMETICAS
-  				
-  					SI	OPCION ES DISTINTO A SALIR
-  					
-  						SEGUN OPCION
- 							
- 							CASO 0: SALIR
-  							CASO 1: SUMAR
-  							CASO 2: RESTAR
-  							CASO 3: MULTIPLICAR					
-  							CASO 4: DIVIDIR
-  							CASO 5: RAIZ
-  							CASO 6: POTENCIA
-  							CASO 7: SUMATORIO
-  							
-						FIN SEGUN
-					
-  					FIN SI
+  				CASO 1:	OPERACIONES ARITMETICAS	
   					
   				CASO 2: OPERACIONES TRIGONOMETRICAS
-  				
-  					SI	OPCION ES DISTINTO A SALIR
-  					
-  						SEGUN OPCION
- 							
- 							CASO 0: SALIR
-  							CASO 1: SENO
-  							CASO 2: COSENO
-  							CASO 3: TANGENTE					
-  							CASO 4: SECANTE
-  							CASO 5: COSECANTE
-  							CASO 6: COTANGENTE
-  							
-						FIN SEGUN
-					
-  					FIN SI
   
   			FIN SEGUN
   
@@ -110,10 +79,12 @@ public class Main {
 			if(opcion != 0){
 				switch(opcion){
 				case 1:
-					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					//opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					LlamadorAritmetico.llamadorAritmetico();
 					break;
 				case 2: 
-					opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+					//opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+					LlamadorTrigonometrico.llamadorTrigonometrico();
 					break;
 				}
 			}

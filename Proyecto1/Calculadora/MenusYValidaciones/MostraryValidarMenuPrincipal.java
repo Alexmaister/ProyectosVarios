@@ -42,7 +42,7 @@ public class MostraryValidarMenuPrincipal {
 				
 				}while(opcion<0 || opcion>2);
 				
-				
+				System.out.println("Gracias por confiar en nosotros");
 				
 				return opcion;
 		

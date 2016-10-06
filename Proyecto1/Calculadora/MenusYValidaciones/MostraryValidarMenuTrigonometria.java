@@ -4,12 +4,12 @@ public class MostraryValidarMenuTrigonometria {
 	
 	
 	/*CABEZERA:int mostraryValidarMenutrigonometria()
-	 * Descripcion:Metodo que muestra por pantalla el menu de operaciones trigonometricas y devuelve la opcion elegida
-	 * Entradas:Opcion de menu
-	 * Salidas:Muestra el menu en pantalla y devuelve la opcion elegida
-	 * Precondiciones:Ninguna
-	 * Postcondiciones:Ser veran en pantalla 6 opciones y devolvera la opcion elegida
-	 * */
+	  Descripcion:Metodo que muestra por pantalla el menu de operaciones trigonometricas y devuelve la opcion elegida
+	  Entradas:Opcion de menu
+	  Salidas:Muestra el menu en pantalla y devuelve la opcion elegida
+	  Precondiciones:Ninguna
+	  Postcondiciones:Ser veran en pantalla 6 opciones y devolvera la opcion elegida
+	  */
 	public static int mostraryValidarMenuTrigonometria(){
 		
 		System.out.println("\n0--VOLVER");
