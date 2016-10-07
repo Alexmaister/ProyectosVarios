@@ -1,4 +1,6 @@
 package Main;
+import java.util.Scanner;
+
 import MenusYValidaciones.*;
 import OperacionesAritmeticas.*;
 import OperacionesTrigonometricas.*;
@@ -61,6 +63,38 @@ import OperacionesTrigonometricas.*;
   	MIENTRAS OPCION NO SEA SALIR
   
   FIN
+  
+  ----------NIVEL DOS: OPERACIONES ARITMETICAS------------
+ CASO 1: 
+ 	SI OPCION ES DISTINTO A SALIR  					
+		SEGUN OPCION		
+			CASO 0: SALIR
+			CASO 1: SUMAR
+			CASO 2: RESTAR
+			CASO 3: MULTIPLICAR					
+			CASO 4: DIVIDIR
+			CASO 5: RAIZ
+			CASO 6: POTENCIA
+			CASO 7: SUMATORIO  							
+		FIN SEGUN
+	FIN SI 
+  
+   ----------NIVEL DOS: OPERACIONES TRIGONOMETRICAS------------
+ CASO 2: 
+	SI OPCION ES DISTINTO A SALIR	
+		SEGUN OPCION		
+			CASO 0: SALIR
+			CASO 1: SENO
+			CASO 2: COSENO
+			CASO 3: TANGENTE					
+			CASO 4: SECANTE
+			CASO 5: COSECANTE
+			CASO 6: COTANGENTE		
+		FIN SEGUN
+	FIN SI
+  
+  
+  
  * */
 public class Main {
 
@@ -71,25 +105,66 @@ public class Main {
 		MostraryValidarMenuTrigonometria MostrarMenuTrigonometria = new MenusYValidaciones.MostraryValidarMenuTrigonometria();*/
 		int opcion = 0;
 		@SuppressWarnings("unused")
-		int opcionSubmenu = 0;      
-				
+		int opcionSubmenu = 0;  
+		Scanner teclado=new Scanner(System.in);
+		int numeroOperandos = 0;
+		int resultado = 0;
+		
+		
 		do{
+			//Mostrar y validar menu
 			opcion = MostraryValidarMenuPrincipal.mostraryValidarMenuPrincipal();
 			
+			//SI OPCION ES DISTINTO A SALIR
 			if(opcion != 0){
+				//SEGUN OPCION
 				switch(opcion){
+				//CASO 1:	OPERACIONES ARITMETICAS
 				case 1:
-					//opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
-					LlamadorAritmetico.llamadorAritmetico();
+					//SI OPCION ES DISTINTO A SALIR  
+					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					if(opcionSubmenu!=0){
+						//SEGUN OPCION	
+						switch(opcionSubmenu){
+							//CASO 0: SALIR
+							//CASO 1: SUMAR
+							case 1:
+								break;
+							//CASO 2: RESTAR
+							case 2:
+								break;
+							//CASO 3: MULTIPLICAR
+							case 3:
+								System.out.println("¿Cuantos operandos desea utilizar para la multiplicacion?");	
+								numeroOperandos=teclado.nextInt();
+								resultado = Multiplicar.multiplicacion(numeroOperandos);
+								break;
+							//CASO 4: DIVIDIR
+							case 4:
+								break;
+							//CASO 5: RAIZ
+							case 5:
+								break;
+							//CASO 6: POTENCIA
+							case 6:
+								break;
+							//CASO 7: SUMATORIO
+							case 7:
+								break;
+						}//FIN SEGUN
+					}//FIN SI 
+					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					//LlamadorAritmetico.llamadorAritmetico();
 					break;
+				//CASO 2: OPERACIONES TRIGONOMETRICAS
 				case 2: 
-					//opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
-					LlamadorTrigonometrico.llamadorTrigonometrico();
+					opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+					//LlamadorTrigonometrico.llamadorTrigonometrico();
 					break;
 				}
 			}
 			
-		}while(opcion!=0);
+		}while(opcion!=0); 
 		
 		
 	}
