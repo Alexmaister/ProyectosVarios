@@ -1,6 +1,7 @@
 package OperacionesAritmeticas;
 
 import MenusYValidaciones.MostraryValidarMenuAritmetica;
+
 /* 
 SI	OPCION ES DISTINTO A SALIR  					
 	SEGUN OPCION		
@@ -32,9 +33,20 @@ public class LlamadorAritmetico {
 	public static void llamadorAritmetico(){
 		
 		int opcion = 1;
+		int comodin = 2;
 		do{
 			
 		opcion = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+		
+		if(opcion!=0){
+			
+			switch(opcion){
+				case 3: 
+					Multiplicar.multiplicacion(comodin);
+				break;
+			}
+		}
+	
 		
 		}while(opcion!=0);
 	}

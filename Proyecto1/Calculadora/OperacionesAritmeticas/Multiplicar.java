@@ -14,4 +14,13 @@ package OperacionesAritmeticas;
 
 public class Multiplicar {
 
+	public static int multiplicacion (int numeroOperandos){
+		
+		int resultado = 0;
+		System.out.println("Has entrado en la multiplicacion");
+		
+		return resultado;
+		
+	}
+	
 }
