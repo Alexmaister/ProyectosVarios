@@ -18,7 +18,8 @@ public class Multiplicar {
 		
 		int resultado = 0;
 		System.out.println("Has entrado en la multiplicacion");
-		
+		System.out.println("Vas a usar "+numeroOperandos+" operandos");
+			
 		return resultado;
 		
 	}

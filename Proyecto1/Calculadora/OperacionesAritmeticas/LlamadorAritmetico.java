@@ -1,5 +1,7 @@
 package OperacionesAritmeticas;
 
+import java.util.Scanner;
+
 import MenusYValidaciones.MostraryValidarMenuAritmetica;
 
 /* 
@@ -18,8 +20,7 @@ FIN SI
  */
 /*  
   DESCRIPCION: el subprograma pedirá la operacion que se quiere realizar del menu
-  				 cuantos operandos vamos a usar,
-   				 y los operandos con los que se quiere operar 
+  				 y cuantos operandos vamos a usar. 
    				 
   PRECONDICIONES: La opcion del submenu debe estar entre 0 y 7
   ENTRADAS: Opcion de menu y los operandos
@@ -33,7 +34,10 @@ public class LlamadorAritmetico {
 	public static void llamadorAritmetico(){
 		
 		int opcion = 1;
-		int comodin = 2;
+		int resultado = 0;
+		Scanner teclado=new Scanner(System.in);
+		int numeroOperandos = 0;
+		
 		do{
 			
 		opcion = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
@@ -42,7 +46,9 @@ public class LlamadorAritmetico {
 			
 			switch(opcion){
 				case 3: 
-					Multiplicar.multiplicacion(comodin);
+					System.out.println("¿Cuantos operandos desea utilizar para la multiplicacion?");	
+					numeroOperandos=teclado.nextInt();
+					resultado = Multiplicar.multiplicacion(numeroOperandos);
 				break;
 			}
 		}
