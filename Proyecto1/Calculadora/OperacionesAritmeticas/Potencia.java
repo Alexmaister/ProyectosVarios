@@ -1,5 +1,16 @@
 package OperacionesAritmeticas;
 
+/*
+CABECERA: 
+
+COMENTARIO: 
+PRECONDICIONES: 
+ENTRADAS: 
+SALIDAS: 
+ENTRADA/SALIDA:
+POSTCONDICIONES: 
+*/
+
 public class Potencia {
 
 	public static double potencia (double base, double exponente){

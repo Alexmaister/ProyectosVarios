@@ -108,6 +108,8 @@ public class Main {
 		int numeroOperandos = 0;
 		@SuppressWarnings("unused")
 		double resultado = 0.0;
+		double numero1 = 0.0;
+		double numero2 = 0.0;
 		//Variables para la division
 		double dividendo = 0;
 		double divisor = 0;
@@ -138,9 +140,12 @@ public class Main {
 							//CASO 0: SALIR
 							//CASO 1: SUMAR
 							case 1:
-								System.out.println("¿Cuantos sumandos desea utilizar?");	
-								numeroOperandos=teclado.nextInt();
-								resultado = Sumar.suma(numeroOperandos);
+								System.out.println("Introduce el primer sumando");	
+								numero1=teclado.nextDouble();
+								System.out.println("\nIntroduce el segundo sumando");	
+								numero2=teclado.nextDouble();
+								resultado = Sumar.suma(numero1, numero2);
+								PacoPinta.pinturillo(resultado);
 								break;
 							//CASO 2: RESTAR
 							case 2:

@@ -1,5 +1,16 @@
 package OperacionesAritmeticas;
 
+/*
+CABECERA: 
+
+COMENTARIO: 
+PRECONDICIONES: 
+ENTRADAS: 
+SALIDAS: 
+ENTRADA/SALIDA:
+POSTCONDICIONES: 
+*/
+
 public class Restar {
 	
 public static int resta (int numeroOperandos){

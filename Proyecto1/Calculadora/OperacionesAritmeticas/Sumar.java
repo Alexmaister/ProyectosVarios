@@ -1,15 +1,25 @@
 package OperacionesAritmeticas;
 
+/*
+  CABECERA: 
+ 
+ COMENTARIO: 
+ PRECONDICIONES: 
+ ENTRADAS: 
+ SALIDAS: 
+ ENTRADA/SALIDA:
+ POSTCONDICIONES: 
+ */
+
 public class Sumar {
 	
-public static int suma (int numeroOperandos){
+public static double suma (double sumando1, double sumando2){
 		
-		int resultado = 0;
-		System.out.println("Has entrado en la Suma");
-		System.out.println("Vas a usar "+numeroOperandos+" sumandos");
-			
+		double resultado = 0.0;
+		
+		resultado = sumando1 + sumando2;
+		
 		return resultado;
-		
 	}
 
 }

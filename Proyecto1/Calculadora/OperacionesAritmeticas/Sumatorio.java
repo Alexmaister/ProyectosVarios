@@ -1,5 +1,16 @@
 package OperacionesAritmeticas;
 
+/*
+CABECERA: 
+
+COMENTARIO: 
+PRECONDICIONES: 
+ENTRADAS: 
+SALIDAS: 
+ENTRADA/SALIDA:
+POSTCONDICIONES: 
+*/
+
 public class Sumatorio {
 	
 	public static int sumatorio (int numeroSumatorio){
