@@ -1,4 +1,6 @@
 package Main;
+import java.util.Scanner;
+
 import MenusYValidaciones.*;
 import OperacionesAritmeticas.*;
 import OperacionesTrigonometricas.*;
@@ -19,13 +21,10 @@ import OperacionesTrigonometricas.*;
      * Programa que simulara una calculadora con operaciones tanto aritmeticas como trigonometricas
   
   Requisitos:
-      * Calcular suma
-      * Calcular resta
-      * Calcular multiplicacion
-      * Calcular division
+      * Debe de ser capaz de realizar todas las operaciones descritas en el pseudocodigo
   
   Entradas:
-      * Opciones de  interacciOn con el menu
+      * Opciones de  interaccion con el menu
       * Numeros con los que se realizaran las operaciones
   
   Salidas:
@@ -61,7 +60,40 @@ import OperacionesTrigonometricas.*;
   	MIENTRAS OPCION NO SEA SALIR
   
   FIN
+  
+  ----------NIVEL DOS: OPERACIONES ARITMETICAS------------
+ CASO 1: 
+ 	SI OPCION ES DISTINTO A SALIR  					
+		SEGUN OPCION		
+			CASO 0: SALIR
+			CASO 1: SUMAR
+			CASO 2: RESTAR
+			CASO 3: MULTIPLICAR					
+			CASO 4: DIVIDIR
+			CASO 5: RAIZ CUADRADA
+			CASO 6: POTENCIA
+			CASO 7: SUMATORIO  							
+		FIN SEGUN
+	FIN SI 
+  
+   ----------NIVEL DOS: OPERACIONES TRIGONOMETRICAS------------
+ CASO 2: 
+	SI OPCION ES DISTINTO A SALIR	
+		SEGUN OPCION		
+			CASO 0: SALIR
+			CASO 1: SENO
+			CASO 2: COSENO
+			CASO 3: TANGENTE					
+			CASO 4: SECANTE
+			CASO 5: COSECANTE
+			CASO 6: COTANGENTE		
+		FIN SEGUN
+	FIN SI
+  
+  
+  
  * */
+
 public class Main {
 
 	public static void main(String[]args){
@@ -70,26 +102,101 @@ public class Main {
 		MostraryValidarMenuAritmetica MostrarMenuAritmetica = new MenusYValidaciones.MostraryValidarMenuAritmetica();
 		MostraryValidarMenuTrigonometria MostrarMenuTrigonometria = new MenusYValidaciones.MostraryValidarMenuTrigonometria();*/
 		int opcion = 0;
+		int opcionSubmenu = 0;  
+		@SuppressWarnings("resource")
+		Scanner teclado=new Scanner(System.in);
+		int numeroOperandos = 0;
 		@SuppressWarnings("unused")
-		int opcionSubmenu = 0;      
-				
+		double resultado = 0.0;
+		//Variables para la division
+		double dividendo = 0;
+		double divisor = 0;
+		//Variables para la raiz
+		double radicando = 0.0;
+		//Variables para la potencia
+		double base = 0.0;
+		double exponente =0.0;
+		//Variables para el sumatorio
+		int numeroSumatorio=0;
+		
+		
 		do{
+			//Mostrar y validar menu.
 			opcion = MostraryValidarMenuPrincipal.mostraryValidarMenuPrincipal();
 			
+			//SI OPCION ES DISTINTO A SALIR
 			if(opcion != 0){
+				//SEGUN OPCION
 				switch(opcion){
+				//CASO 1:	OPERACIONES ARITMETICAS
 				case 1:
-					//opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
-					LlamadorAritmetico.llamadorAritmetico();
+					//SI OPCION ES DISTINTO A SALIR  
+					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					if(opcionSubmenu!=0){
+						//SEGUN OPCION	
+						switch(opcionSubmenu){
+							//CASO 0: SALIR
+							//CASO 1: SUMAR
+							case 1:
+								System.out.println("¿Cuantos sumandos desea utilizar?");	
+								numeroOperandos=teclado.nextInt();
+								resultado = Sumar.suma(numeroOperandos);
+								break;
+							//CASO 2: RESTAR
+							case 2:
+								System.out.println("¿Cuantos operandos desea utilizar para la resta?");	
+								numeroOperandos=teclado.nextInt();
+								resultado = Restar.resta(numeroOperandos);
+								break;
+							//CASO 3: MULTIPLICAR
+							case 3:
+								System.out.println("¿Cuantos operandos desea utilizar para la multiplicacion?");	
+								numeroOperandos=teclado.nextInt();
+								resultado = Multiplicar.multiplicacion(numeroOperandos);
+								break;
+							//CASO 4: DIVIDIR
+							case 4:
+								System.out.println("Introduzca el dividendo");	
+								dividendo=teclado.nextInt();
+								System.out.println("Introduzca el divisor");	
+								divisor=teclado.nextInt();
+								resultado = Dividir.division(dividendo,divisor);
+								break;
+								
+							//CASO 5: RAIZ CUADRADA
+							case 5:
+								System.out.println("Introduzca el radicando");	
+								radicando=teclado.nextInt();
+								resultado = Raiz.raizCuadrada(radicando);
+								break;
+							//CASO 6: POTENCIA
+							case 6:
+								System.out.println("Introduzca la base");	
+								base=teclado.nextInt();
+								System.out.println("Introduzca el exponente");	
+								exponente=teclado.nextInt();
+								resultado = Potencia.potencia(base, exponente);
+								break;
+							//CASO 7: SUMATORIO
+							case 7:
+								System.out.println("Introduzca el numero al que desea calcularle el sumatorio");	
+								numeroSumatorio=teclado.nextInt();
+								resultado = Sumatorio.sumatorio(numeroSumatorio);
+								break;
+						}//FIN SEGUN
+					}//FIN SI 
+					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					//LlamadorAritmetico.llamadorAritmetico();
 					break;
+				//CASO 2: OPERACIONES TRIGONOMETRICAS
 				case 2: 
-					//opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
-					LlamadorTrigonometrico.llamadorTrigonometrico();
+					opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+					//LlamadorTrigonometrico.llamadorTrigonometrico();
 					break;
 				}
 			}
 			
-		}while(opcion!=0);
+		}while(opcion!=0); 
 		
 		
 	}
