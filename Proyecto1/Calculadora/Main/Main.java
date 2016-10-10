@@ -121,7 +121,7 @@ public class Main {
 		
 		
 		do{
-			//Mostrar y validar menu
+			//Mostrar y validar menu.
 			opcion = MostraryValidarMenuPrincipal.mostraryValidarMenuPrincipal();
 			
 			//SI OPCION ES DISTINTO A SALIR
