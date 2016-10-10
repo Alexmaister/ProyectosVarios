@@ -8,17 +8,17 @@ package OperacionesAritmeticas;
  ENTRADAS: numero de operandos con los que va a operar
  SALIDAS: el resultado de la operacion
  ENTRADA/SALIDA:
- POSTCONDICIONES: el resultado se envia a un subprograma que lo imprima en pantalla
+ POSTCONDICIONES: el resultado se envia al main, donde un subprograma que lo imprimirá en pantalla
 
  */
 
 public class Multiplicar {
 
-	public static int multiplicacion (int numeroOperandos){
+	public static double multiplicacion (double numero1, double numero2){
 		
-		int resultado = 0;
-		System.out.println("Has entrado en la multiplicacion");
-		System.out.println("Vas a usar "+numeroOperandos+" operandos");
+		double resultado = 0;
+		
+		resultado = numero1*numero2;
 			
 		return resultado;
 		

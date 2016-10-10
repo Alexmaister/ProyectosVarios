@@ -117,7 +117,7 @@ public class Main {
 		double radicando = 0.0;
 		//Variables para la potencia
 		double base = 0.0;
-		double exponente =0.0;
+		int exponente =0;
 		//Variables para el sumatorio
 		int numeroSumatorio=0;
 		
@@ -155,9 +155,12 @@ public class Main {
 								break;
 							//CASO 3: MULTIPLICAR
 							case 3:
-								System.out.println("¿Cuantos operandos desea utilizar para la multiplicacion?");	
-								numeroOperandos=teclado.nextInt();
-								resultado = Multiplicar.multiplicacion(numeroOperandos);
+								System.out.println("Introduce el primer numero");	
+								numero1=teclado.nextDouble();
+								System.out.println("\nIntroduce el segundo numero");	
+								numero2=teclado.nextDouble();
+								resultado = Multiplicar.multiplicacion(numero1, numero2);
+								PacoPinta.pinturillo(resultado);
 								break;
 							//CASO 4: DIVIDIR
 							case 4:
@@ -177,10 +180,11 @@ public class Main {
 							//CASO 6: POTENCIA
 							case 6:
 								System.out.println("Introduzca la base");	
-								base=teclado.nextInt();
+								base=teclado.nextDouble();
 								System.out.println("Introduzca el exponente");	
 								exponente=teclado.nextInt();
 								resultado = Potencia.potencia(base, exponente);
+								PacoPinta.pinturillo(resultado);
 								break;
 							//CASO 7: SUMATORIO
 							case 7:
