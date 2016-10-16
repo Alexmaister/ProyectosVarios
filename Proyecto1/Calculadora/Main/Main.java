@@ -149,7 +149,7 @@ public class Main {
 								break;
 							//CASO 2: RESTAR
 							case 2:
-								System.out.println("¿Cuantos operandos desea utilizar para la resta?");	
+								System.out.println("ï¿½Cuantos operandos desea utilizar para la resta?");	
 								numeroOperandos=teclado.nextInt();
 								resultado = Restar.resta(numeroOperandos);
 								break;
@@ -200,6 +200,10 @@ public class Main {
 				//CASO 2: OPERACIONES TRIGONOMETRICAS
 				case 2: 
 					opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
+					//LlamadorTrigonometrico.llamadorTrigonometrico();
+					break;
+				case 3: 
+					opcionSubmenu = MostrarYValidarMenuLeyOhm.mostrarYValidarMenuLeyOhm();
 					//LlamadorTrigonometrico.llamadorTrigonometrico();
 					break;
 				}
