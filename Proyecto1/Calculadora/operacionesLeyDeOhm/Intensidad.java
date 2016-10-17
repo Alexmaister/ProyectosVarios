@@ -1,4 +1,4 @@
-package operacionesLeyDeOhm;
+package OperacionesLeyDeOhm;
 
 public class Intensidad 
 {
@@ -16,7 +16,7 @@ public class Intensidad
     *     * intensidad
     * Entrada/Salida: Ninguna
     * Postcondiciones: 
-    *     * intensidad no puede ser negativa
+    *     * intensidad calculada no puede ser negativa
     */
 	public static double calcularIntensidad( double voltaje, double resistencia )
 	{
@@ -26,6 +26,12 @@ public class Intensidad
 		//calculamos el valor de la intensidad aplicando la formula I = V / R
 		intensidad = voltaje / resistencia;
 		
+		//Si la  resistencia es negativa
+		if ( intensidad < 0 )
+		{
+			System.out.println("Error: La intensidad calculada no puede ser negativa, debes aplicar un voltaje mayor");
+		}
+			
 		//Devolvemos el valor calculado
 		return(intensidad);
 	}
