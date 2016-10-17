@@ -18,6 +18,7 @@ public class MostraryValidarMenuPrincipal {
 		System.out.println("------------------------------");
 		System.out.println("1--OPERACIONES ARITMETICAS");
 		System.out.println("2--OPERACIONES TRIGONOMETRICAS");
+		System.out.println("3--OPERACIONES LEY DE OHM");
 		System.out.println("\n0--SALIR");
 		
 				//abrimos flujo del teclado
@@ -35,21 +36,18 @@ public class MostraryValidarMenuPrincipal {
 				opcion=teclado.nextInt();
 				
 				//si la opcion no se encuentra en el menu mostrar nuevo mensage
-				if(opcion<0 || opcion>2){
+				if(opcion<0 || opcion>3){
 					
 					System.out.println("Elija una opcion correcta");
 				}
 				
-				}while(opcion<0 || opcion>2);
+				}while(opcion<0 || opcion>3);
 				
 				if(opcion==0){
 					System.out.println("Gracias por confiar en nosotros");
 					System.out.println("<3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3");
 				}
 				
-				return opcion;
-		
-		
-		
+				return opcion;	
 	}
 }
