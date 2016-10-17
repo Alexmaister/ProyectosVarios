@@ -27,6 +27,6 @@ public class Resistencia
 		resistencia = voltaje / intensidad;
 		
 		//Devolvemos el valor calculado
-		return(intensidad);
+		return(resistencia);
 	}	
 }
