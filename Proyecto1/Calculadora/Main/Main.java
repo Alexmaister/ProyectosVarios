@@ -52,6 +52,8 @@ import OperacionesTrigonometricas.*;
   				CASO 1:	OPERACIONES ARITMETICAS	
   					
   				CASO 2: OPERACIONES TRIGONOMETRICAS
+  				
+  				CASO 3: OPERACIONES LEY DE OHM
   
   			FIN SEGUN
   
@@ -61,7 +63,7 @@ import OperacionesTrigonometricas.*;
   
   FIN
   
-  ----------NIVEL DOS: OPERACIONES ARITMETICAS------------
+ ----------NIVEL DOS: OPERACIONES ARITMETICAS------------
  CASO 1: 
  	SI OPCION ES DISTINTO A SALIR  					
 		SEGUN OPCION		
@@ -76,7 +78,7 @@ import OperacionesTrigonometricas.*;
 		FIN SEGUN
 	FIN SI 
   
-   ----------NIVEL DOS: OPERACIONES TRIGONOMETRICAS------------
+ ----------NIVEL DOS: OPERACIONES TRIGONOMETRICAS------------
  CASO 2: 
 	SI OPCION ES DISTINTO A SALIR	
 		SEGUN OPCION		
@@ -89,9 +91,18 @@ import OperacionesTrigonometricas.*;
 			CASO 6: COTANGENTE		
 		FIN SEGUN
 	FIN SI
-  
-  
-  
+	
+ ----------NIVEL DOS: OPERACIONES LEY DE OHM------------
+ CASO 3: 
+ 	SI OPCION ES DISTINTO A SALIR  					
+		SEGUN OPCION		
+			CASO 0: SALIR
+			CASO 1: INTENSIDAD
+			CASO 2: RESISTENCIA
+			CASO 3: VOLTAJE
+			CASO 4: POTENCIA 							
+		FIN SEGUN
+	FIN SI 
  * */
 
 public class Main {
