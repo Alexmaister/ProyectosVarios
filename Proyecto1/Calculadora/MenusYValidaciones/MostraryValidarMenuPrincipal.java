@@ -19,7 +19,7 @@ public class MostraryValidarMenuPrincipal {
 		System.out.println("1--OPERACIONES ARITMETICAS");
 		System.out.println("2--OPERACIONES TRIGONOMETRICAS");
 		System.out.println("3--OPERACIONES LEY DE OHM");
-		System.out.println("\n0--SALIR");
+		System.out.println("\n0--SALIR\n");
 		
 				//abrimos flujo del teclado
 				@SuppressWarnings("resource")
