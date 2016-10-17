@@ -194,7 +194,7 @@ public class Main {
 								break;
 						}//FIN SEGUN
 					}//FIN SI 
-					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					
 					//LlamadorAritmetico.llamadorAritmetico();
 					break;
 				//CASO 2: OPERACIONES TRIGONOMETRICAS
