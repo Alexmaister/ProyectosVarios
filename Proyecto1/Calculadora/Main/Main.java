@@ -121,6 +121,12 @@ public class Main {
 		//Variables para el sumatorio
 		int numeroSumatorio=0;
 		
+		//variables para almacenar las distintas magnitudes electricas
+		double intensidad = 0;
+		double resistencia = 0;
+		double voltaje = 0;
+		double potencia = 0;
+		
 		
 		do{
 			//Mostrar y validar menu.
@@ -204,7 +210,104 @@ public class Main {
 					break;
 				case 3: 
 					opcionSubmenu = MostrarYValidarMenuLeyOhm.mostrarYValidarMenuLeyOhm();
-					//LlamadorTrigonometrico.llamadorTrigonometrico();
+					
+					if ( opcionSubmenu != 0 )
+					{
+						switch ( opcionSubmenu )
+			            {
+			                case 1 : 
+								{	
+									System.out.println("\n_.:: Formula I = V / R ::._\n");
+									do
+									{
+										System.out.print("Introduce el voltaje: ");
+										voltaje = teclado.nextDouble();
+									} while ( voltaje <= 0 );
+									
+									do
+									{
+										System.out.print("Introduce la resistencia: ");
+										resistencia = teclado.nextDouble();
+									} while ( resistencia <= 0 );
+									
+									//Calculamos la intensidad
+									intensidad = OperacionesLeyDeOhm.Intensidad.calcularIntensidad(voltaje, resistencia);
+									
+									//Imprimimos resultado
+									System.out.println("\nI = "+intensidad +" Amperios");			
+								} 
+								break;
+								
+			                case 2 : 
+								{
+									System.out.println("\n_.:: Formula R = V / I ::._\n");
+									do
+									{
+										System.out.print("Introduce el voltaje: ");
+										voltaje = teclado.nextDouble();
+									} while ( voltaje <= 0 );
+									
+									do
+									{
+										System.out.print("Introduce la intensidad: ");
+										intensidad = teclado.nextDouble();
+									} while ( intensidad <= 0 );
+									
+									//Calculamos la resistencia
+									resistencia = OperacionesLeyDeOhm.Resistencia.calcularResistencia(voltaje, intensidad);
+									
+									//Imprimimos resultado
+									System.out.println("\nR = "+resistencia +" Ohmios\n");
+								}
+								break;
+								
+			                case 3 : 
+								{
+									System.out.println("\n_.:: Formula V = I * R ::._\n");
+									do
+									{
+										System.out.print("Introduce la intensidad: ");
+										intensidad = teclado.nextDouble();
+									} while ( intensidad <= 0 );
+									
+									do
+									{
+										System.out.print("Introduce la resistencia: ");
+										resistencia = teclado.nextDouble();
+									} while ( resistencia <= 0 );
+									
+									//Calculamos el voltaje
+									voltaje = OperacionesLeyDeOhm.Voltaje.calcularVoltaje(intensidad, resistencia);
+									
+									//Imprimimos resultado
+									System.out.println("\nV = "+voltaje +" Voltios\n");
+								}
+								break;
+								
+							case 4 : 
+								{
+									System.out.println("\n_.:: Formula W = V * I ::._\n");
+									do
+									{
+										System.out.print("Introduce el voltaje: ");
+										voltaje = teclado.nextDouble();
+									} while ( voltaje <= 0 );
+									
+									do
+									{
+										System.out.print("Introduce la intensidad: ");
+										intensidad = teclado.nextDouble();
+									} while ( intensidad <= 0 );
+									
+									//Calculamos la resistencia
+									potencia = OperacionesLeyDeOhm.Potencia.calcularPotencia(intensidad, voltaje);
+									
+									//Imprimimos resultado
+									System.out.println("\nW = "+potencia +" Vatios\n");
+								}
+			            }
+					}
+					
 					break;
 				}
 			}
