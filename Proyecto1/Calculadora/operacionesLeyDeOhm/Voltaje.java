@@ -26,12 +26,6 @@ public class Voltaje
 		//calculamos el valor del voltaje aplicando la formula V = I * R
 		voltaje = intensidad * resistencia;
 		
-		//Si el voltaje es negativo
-		if ( voltaje < 0 )
-		{
-			System.out.println("Error: El voltaje calculado no puede ser negativo");
-		}
-		
 		//Devolvemos el valor calculado
 		return(voltaje);
 	}	

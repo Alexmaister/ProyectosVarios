@@ -16,23 +16,17 @@ public class Potencia
 	 *     * potencia
 	 * Entrada/Salida: Ninguna
 	 * Postcondiciones: 
-	 *     * potencia calculada no puede ser negativo
+	 *     * potencia calculada no puede ser negativa
 	 */
-	 public static double calcularVoltaje( double intensidad, double resistencia )
+	 public static double calcularPotencia( double intensidad, double voltaje )
 	 {	
 		//variable para almacenar el resultado de la operacion
-		double voltaje = 0;
+		double potencia = 0;
 		
 		//calculamos el valor de la potencia aplicando la formula P = V * I
-		voltaje = intensidad * resistencia;
-		
-		//Si el voltaje es negativo
-		if ( voltaje < 0 )
-		{
-			System.out.println("Error: La resistencia calculada no puede ser negativa, debes aplicar un voltaje mayor");
-		}
+		potencia = intensidad * voltaje;
 		
 		//Devolvemos el valor calculado
-		return(voltaje);
+		return(potencia);
 	}	
 }

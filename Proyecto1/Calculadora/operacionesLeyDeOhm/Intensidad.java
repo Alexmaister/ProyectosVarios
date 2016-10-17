@@ -26,12 +26,6 @@ public class Intensidad
 		//calculamos el valor de la intensidad aplicando la formula I = V / R
 		intensidad = voltaje / resistencia;
 		
-		//Si la  resistencia es negativa
-		if ( intensidad < 0 )
-		{
-			System.out.println("Error: La intensidad calculada no puede ser negativa, debes aplicar un voltaje mayor");
-		}
-			
 		//Devolvemos el valor calculado
 		return(intensidad);
 	}
