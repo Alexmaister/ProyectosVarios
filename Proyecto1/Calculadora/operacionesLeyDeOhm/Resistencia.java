@@ -1,5 +1,5 @@
 package operacionesLeyDeOhm;
 
-public class Resitencia {
+public class Resistencia {
 
 }
