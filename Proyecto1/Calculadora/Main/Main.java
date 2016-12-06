@@ -4,6 +4,7 @@ import java.util.Scanner;
 import MenusYValidaciones.*;
 import OperacionesAritmeticas.*;
 import OperacionesTrigonometricas.*;
+import OperacionesLeyDeOhm.*;
 
 
 /*ASIGNACION DE MODULOS
@@ -109,15 +110,13 @@ public class Main {
 
 	public static void main(String[]args){
 		
-		/*MostraryValidarMenuPrincipal MostrarMenuPrincipal = new MenusYValidaciones.MostraryValidarMenuPrincipal();
-		MostraryValidarMenuAritmetica MostrarMenuAritmetica = new MenusYValidaciones.MostraryValidarMenuAritmetica();
-		MostraryValidarMenuTrigonometria MostrarMenuTrigonometria = new MenusYValidaciones.MostraryValidarMenuTrigonometria();*/
+	
 		int opcion = 0;
 		int opcionSubmenu = 0;  
-		@SuppressWarnings("resource")
+		
 		Scanner teclado=new Scanner(System.in);
 		int numeroOperandos = 0;
-		@SuppressWarnings("unused")
+		
 		double resultado = 0.0;
 		double numero1 = 0.0;
 		double numero2 = 0.0;
@@ -140,35 +139,37 @@ public class Main {
 		
 		
 		do{
-			//Mostrar y validar menu.
-			opcion = MostraryValidarMenuPrincipal.mostraryValidarMenuPrincipal();
+			//Mostrar y validar menu principal.
+			opcion = MenusyValidaciones.mostraryValidarMenuPrincipal();
 			
-			//SI OPCION ES DISTINTO A SALIR
+			
 			if(opcion != 0){
-				//SEGUN OPCION
+				
 				switch(opcion){
+				
 				//CASO 1:	OPERACIONES ARITMETICAS
 				case 1:
-					//SI OPCION ES DISTINTO A SALIR  
-					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
+					
+					opcionSubmenu = MenusyValidaciones.mostraryValidarMenuAritmetica();
+					
 					if(opcionSubmenu!=0){
-						//SEGUN OPCION	
+						
 						switch(opcionSubmenu){
-							//CASO 0: SALIR
+							
 							//CASO 1: SUMAR
 							case 1:
 								System.out.println("Introduce el primer sumando");	
 								numero1=teclado.nextDouble();
 								System.out.println("\nIntroduce el segundo sumando");	
 								numero2=teclado.nextDouble();
-								resultado = Sumar.suma(numero1, numero2);
-								PacoPinta.pinturillo(resultado);
+								resultado = OperacionesAritmeticas.suma(numero1, numero2);
+								
 								break;
 							//CASO 2: RESTAR
 							case 2:
 								System.out.println("�Cuantos operandos desea utilizar para la resta?");	
 								numeroOperandos=teclado.nextInt();
-								resultado = Restar.resta(numeroOperandos);
+								resultado =  OperacionesAritmeticas.resta(numeroOperandos);
 								break;
 							//CASO 3: MULTIPLICAR
 							case 3:
@@ -176,8 +177,8 @@ public class Main {
 								numero1=teclado.nextDouble();
 								System.out.println("\nIntroduce el segundo numero");	
 								numero2=teclado.nextDouble();
-								resultado = Multiplicar.multiplicacion(numero1, numero2);
-								PacoPinta.pinturillo(resultado);
+								resultado =  OperacionesAritmeticas.multiplicacion(numero1, numero2);
+								
 								break;
 							//CASO 4: DIVIDIR
 							case 4:
@@ -185,14 +186,14 @@ public class Main {
 								dividendo=teclado.nextInt();
 								System.out.println("Introduzca el divisor");	
 								divisor=teclado.nextInt();
-								resultado = Dividir.division(dividendo,divisor);
+								resultado =  OperacionesAritmeticas.division(dividendo,divisor);
 								break;
 								
 							//CASO 5: RAIZ CUADRADA
 							case 5:
 								System.out.println("Introduzca el radicando");	
 								radicando=teclado.nextInt();
-								resultado = Raiz.raizCuadrada(radicando);
+								resultado = OperacionesAritmeticas.raizCuadrada(radicando);
 								break;
 							//CASO 6: POTENCIA
 							case 6:
@@ -200,27 +201,28 @@ public class Main {
 								base=teclado.nextDouble();
 								System.out.println("Introduzca el exponente");	
 								exponente=teclado.nextInt();
-								resultado = Potencia.potencia(base, exponente);
-								PacoPinta.pinturillo(resultado);
+								resultado =  OperacionesAritmeticas.potencia(base, exponente);
+								
 								break;
 							//CASO 7: SUMATORIO
 							case 7:
 								System.out.println("Introduzca el numero al que desea calcularle el sumatorio");	
 								numeroSumatorio=teclado.nextInt();
-								resultado = Sumatorio.sumatorio(numeroSumatorio);
+								resultado =  OperacionesAritmeticas.sumatorio(numeroSumatorio);
 								break;
 						}//FIN SEGUN
 					}//FIN SI 
-					opcionSubmenu = MostraryValidarMenuAritmetica.mostraryValidarMenuAritmetica();
-					//LlamadorAritmetico.llamadorAritmetico();
-					break;
+					
+					
 				//CASO 2: OPERACIONES TRIGONOMETRICAS
 				case 2: 
-					opcionSubmenu = MostraryValidarMenuTrigonometria.mostraryValidarMenuTrigonometria();
-					//LlamadorTrigonometrico.llamadorTrigonometrico();
+					opcionSubmenu = MenusyValidaciones.mostraryValidarMenuTrigonometria();
+					
 					break;
+					
+				//CASO 3: OPERACIONES LEY DE OHM
 				case 3: 
-					opcionSubmenu = MostrarYValidarMenuLeyOhm.mostrarYValidarMenuLeyOhm();
+					opcionSubmenu = MenusyValidaciones.mostrarYValidarMenuLeyOhm();
 					
 					if ( opcionSubmenu != 0 )
 					{
@@ -242,7 +244,7 @@ public class Main {
 									} while ( resistencia <= 0 );
 									
 									//Calculamos la intensidad
-									intensidad = OperacionesLeyDeOhm.Intensidad.calcularIntensidad(voltaje, resistencia);
+									intensidad = OperacioneLeyDeOhm.calcularIntensidad(voltaje, resistencia);
 									
 									//Imprimimos resultado
 									System.out.println("\nI = "+intensidad +" Amperios");			
@@ -265,7 +267,7 @@ public class Main {
 									} while ( intensidad <= 0 );
 									
 									//Calculamos la resistencia
-									resistencia = OperacionesLeyDeOhm.Resistencia.calcularResistencia(voltaje, intensidad);
+									resistencia = OperacioneLeyDeOhm.calcularResistencia(voltaje, intensidad);
 									
 									//Imprimimos resultado
 									System.out.println("\nR = "+resistencia +" Ohmios\n");
@@ -288,7 +290,7 @@ public class Main {
 									} while ( resistencia <= 0 );
 									
 									//Calculamos el voltaje
-									voltaje = OperacionesLeyDeOhm.Voltaje.calcularVoltaje(intensidad, resistencia);
+									voltaje = OperacioneLeyDeOhm.calcularVoltaje(intensidad, resistencia);
 									
 									//Imprimimos resultado
 									System.out.println("\nV = "+voltaje +" Voltios\n");
@@ -311,7 +313,7 @@ public class Main {
 									} while ( intensidad <= 0 );
 									
 									//Calculamos la resistencia
-									potencia = OperacionesLeyDeOhm.Potencia.calcularPotencia(intensidad, voltaje);
+									potencia = OperacioneLeyDeOhm.calcularPotencia(intensidad, voltaje);
 									
 									//Imprimimos resultado
 									System.out.println("\nW = "+potencia +" Vatios\n");
