@@ -218,6 +218,45 @@ public class Main {
 				case 2: 
 					opcionSubmenu = MenusyValidaciones.mostraryValidarMenuTrigonometria();
 					
+					if(opcionSubmenu!=0){
+						
+						switch(opcionSubmenu){
+						
+						//COSENO
+						case 1:
+							
+							break;
+							
+						//SENO
+						case 2:
+							
+							break;
+						
+						//TANGENTE
+						case 3:
+							
+							break;
+							
+						//COSECANTE
+						case 4:
+							
+							break;
+							
+						//SECANTE
+						case 5 :
+							
+							break;
+							
+						//COTANGENTE
+						case 6:
+							
+							break;
+						
+						
+						}
+						
+					}//FIN SI
+					
 					break;
 					
 				//CASO 3: OPERACIONES LEY DE OHM
