@@ -2,86 +2,146 @@ package OperacionesAritmeticas;
 
 public class OperacionesAritmeticas 
 {
-	/*
-	 	PRECONDICIONES: 
-	 	ENTRADAS:
-	 	SALIDAS:
-	 	POSTCONDICIONES:
-	 	ENTRADA/SALIDA:
-	*/
-	public static double division (double dividendo,double divisor) {
+    /*
+	CABECERA: public static double suma (double numero1, double numero2)
+	FUNCIONAMIENTO: devolvera el resultado de la suma de los numeros
+	ENTRADAS: numero1 y numero2 (real) (real)
+	PRECONDICIONES: 
+	SALIDAS: resultado de la suma (real)
+	POSTCONDICIONES: se devolvera un numero comprendido en el rango de numeros reales
+	 				 se devuelve asociado al nombre
+	ENTRADA/SALIDA:
+    */
+	public static double suma (double numero1, double numero2) {
 		
 		double resultado = 0.0;
 		
-		//Realizamos el calculo
-		resultado = dividendo / divisor;
+		resultado = numero1 + numero2;
 		
 		return resultado;
 	}
 
-
-/*
-	CABECERA: public int multiplicar (int numeroOperandos, int operando1, int operando2)
-	
-	COMENTARIO: El programa multiplicará los operandos recibidos.
+    /*
+	CABECERA: public static int resta (double numero1, double numero2)
+	FUNCIONAMIENTO: devolvera el resultado de la resta de los numeros
+	ENTRADAS: numero1 y numero2 (real) (real)
 	PRECONDICIONES: 
-	ENTRADAS: numero de operandos con los que va a operar
-	SALIDAS: el resultado de la operacion
+	SALIDAS: resultado de la elevacion (real)
+	POSTCONDICIONES: numero comprendido en el rango de numeros reales
+	 			     se devuelve asociado al nombre
 	ENTRADA/SALIDA:
-	POSTCONDICIONES: el resultado se envia al main, donde un subprograma que lo imprimirá en pantalla
-
-*/
-
-	public static double multiplicacion (double numero1, double numero2){
+    */
+	public static int resta (double numero1, double numero2) {
 		
-		double resultado = 0;
-		
-		resultado = numero1*numero2;
+		int resultado = 0;
 			
 		return resultado;
 		
 	}
 	
-	public static double potencia (double base, int exponente){
-		double resultado=1.0;
+    /*
+	CABECERA: public static double dividir (double dividendo, double divisor)
+	FUNCIONAMIENTO: devolvera el resultado de la division de los operandos, 
+	                se devolvera 0 en caso de que el dividendo o divisor sean 0
+	ENTRADAS: divisor y dividendo
+	PRECONDICIONES: 
+	SALIDAS: resultado de la division (real)
+	POSTCONDICIONES: se devolvera un numero comprendido en el rango de reales, o 0 en caso
+					 de que el dividendo o divisor sean igual a 0
+					 se devuelve asociado al nombre
+	ENTRADA/SALIDA:
+    */
+	public static double dividir (double dividendo,double divisor) {
 		
-	//	resultado=Math.pow(base, exponente);
+		double resultado = 0.0;
+		
+		if ( (dividendo != 0 && divisor != 0) || (dividendo != 0 || divisor != 0) )
+		{
+			resultado = dividendo / divisor;
+		}
+		
+		return resultado;
+	}
+
+    /*
+	CABECERA: public static double multiplicar (double numero1, double numero2) 
+	FUNCIONAMIENTO: devolvera el resultado de la multiplicacion de los operandos
+	ENTRADAS: numero de operandos con los que va a operar
+	PRECONDICIONES: 
+	SALIDAS: resultado de la multiplicacion (real)
+	POSTCONDICIONES: se devolvera un numero comprendido en el rango de reales
+					 se devuelve asociado al nombre
+	ENTRADA/SALIDA:
+    */
+	public static double multiplicar (double numero1, double numero2) {
+		
+		double resultado = 0.0;
+		
+		resultado = numero1 * numero2;
+			
+		return resultado;
+	}
+	
+    /*
+	CABECERA: public static double potencia (double base, int exponente)
+	FUNCIONAMIENTO: devolvera el resultado de elevar el exponente a la base
+	ENTRADAS: base y exponente (real) (entero)
+	PRECONDICIONES: 
+	SALIDAS: resultado de la elevacion (real)
+	POSTCONDICIONES: se devolvera un numero comprendido en el rango de reales,
+					 cuando la base sea 0 el resultado sera 0
+					 cuando el exponente sea 0 el resultado es 1
+					 se devuelve asociado al nombre
+	ENTRADA/SALIDA:
+    */
+	public static double potencia (double base, int exponente) {
+		
+		double resultado=0.0;
 		
 		int i;
-		for(i=0;i<exponente;i++){
-			resultado*= base;
+		if ( (exponente != 0 && base != 0) || (base != 0 || exponente != 0) )
+		{
+			for(i = 0; i < exponente; i++) {
+				resultado *= base;
+			}
+		}
+		else if ( base == 0)
+		{
+			resultado = 0;
+		}
+		else
+		{
+			resultado = 1;
 		}
 		
 		return resultado;
 	}
 	
-	public static double raizCuadrada(double radicando){
+    /*
+	CABECERA: public static double raizCuadrada(double radicando)
+	FUNCIONAMIENTO: devolvera el resultado de calcular la raiz cuadrada de un radicando
+	ENTRADAS: radicando (real)
+	PRECONDICIONES: 
+	SALIDAS: resultado de la elevacion (real)
+	POSTCONDICIONES: 
+	ENTRADA/SALIDA:
+    */
+	public static double raizCuadrada(double radicando) {
+		
 		double resultado=0.0;
 		
-		System.out.println("El radicando es"+radicando);
-		
 		return resultado;
 	}
 	
-public static int resta (int numeroOperandos){
-		
-		int resultado = 0;
-		System.out.println("Has entrado en la resta");
-		System.out.println("Vas a usar "+numeroOperandos+" operandos");
-			
-		return resultado;
-		
-	}
-
-public static double suma (double sumando1, double sumando2){
-	
-	double resultado = 0.0;
-	
-	resultado = sumando1 + sumando2;
-	
-	return resultado;
-}
-
+    /*
+	CABECERA: public static double raizCuadrada(double radicando)
+	FUNCIONAMIENTO: devolvera el resultado de calcular la raiz cuadrada de un radicando
+	ENTRADAS: radicando (real)
+	PRECONDICIONES: 
+	SALIDAS: resultado de la elevacion (real)
+	POSTCONDICIONES: 
+	ENTRADA/SALIDA:
+    */
 public static int sumatorio (int numeroSumatorio){
 	int resultado=0;
 	

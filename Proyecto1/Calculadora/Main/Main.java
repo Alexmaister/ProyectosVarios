@@ -177,7 +177,7 @@ public class Main {
 								numero1=teclado.nextDouble();
 								System.out.println("\nIntroduce el segundo numero");	
 								numero2=teclado.nextDouble();
-								resultado =  OperacionesAritmeticas.multiplicacion(numero1, numero2);
+								resultado =  OperacionesAritmeticas.multiplicar(numero1, numero2);
 								
 								break;
 							//CASO 4: DIVIDIR
@@ -186,7 +186,7 @@ public class Main {
 								dividendo=teclado.nextInt();
 								System.out.println("Introduzca el divisor");	
 								divisor=teclado.nextInt();
-								resultado =  OperacionesAritmeticas.division(dividendo,divisor);
+								resultado =  OperacionesAritmeticas.dividir(dividendo,divisor);
 								break;
 								
 							//CASO 5: RAIZ CUADRADA

@@ -2,7 +2,6 @@ package OperacionesLeyDeOhm;
 
 public class OperacioneLeyDeOhm 
 {
-
     /* 
     * Interfaz 
     * Cabecera: public static double calcularIntensidad( double voltaje, double resistencia )
