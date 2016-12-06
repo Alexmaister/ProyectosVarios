@@ -167,9 +167,11 @@ public class Main {
 								break;
 							//CASO 2: RESTAR
 							case 2:
-								System.out.println("�Cuantos operandos desea utilizar para la resta?");	
-								numeroOperandos=teclado.nextInt();
-								resultado =  OperacionesAritmeticas.resta(numeroOperandos);
+								System.out.println("Introduce el primer numero");
+								numero1=teclado.nextDouble();
+								System.out.println("Introduce el segundo numero");
+								numero2=teclado.nextDouble();
+								resultado =  OperacionesAritmeticas.resta(numero1, numero2);
 								break;
 							//CASO 3: MULTIPLICAR
 							case 3:

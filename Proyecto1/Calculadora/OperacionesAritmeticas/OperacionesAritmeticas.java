@@ -22,7 +22,7 @@ public class OperacionesAritmeticas
 	}
 
     /*
-	CABECERA: public static int resta (double numero1, double numero2)
+	CABECERA: public static double resta (double numero1, double numero2)
 	FUNCIONAMIENTO: devolvera el resultado de la resta de los numeros
 	ENTRADAS: numero1 y numero2 (real) (real)
 	PRECONDICIONES: 
@@ -31,9 +31,9 @@ public class OperacionesAritmeticas
 	 			     se devuelve asociado al nombre
 	ENTRADA/SALIDA:
     */
-	public static int resta (double numero1, double numero2) {
+	public static double resta (double numero1, double numero2) {
 		
-		int resultado = 0;
+		double resultado =numero1-numero2;
 			
 		return resultado;
 		
