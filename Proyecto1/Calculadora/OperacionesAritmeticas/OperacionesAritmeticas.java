@@ -2,63 +2,75 @@ package OperacionesAritmeticas;
 
 public class OperacionesAritmeticas 
 {
-	/*
-	 	PRECONDICIONES: 
-	 	ENTRADAS:
-	 	SALIDAS:
-	 	POSTCONDICIONES:
-	 	ENTRADA/SALIDA:
-	*/
-	public static double division (double dividendo,double divisor) {
+    /*
+	CABECERA: public static double dividir (double dividendo, double divisor)
+	FUNCIONAMIENTO: devolvera el resultado de la division de los operandos
+	ENTRADAS: divisor y dividendo
+	PRECONDICIONES: 
+	SALIDAS: resultado de la division (real)
+	POSTCONDICIONES: 
+	ENTRADA/SALIDA:
+    */
+	public static double dividir (double dividendo,double divisor) {
 		
 		double resultado = 0.0;
 		
-		//Realizamos el calculo
 		resultado = dividendo / divisor;
 		
 		return resultado;
 	}
 
-
-/*
-	CABECERA: public int multiplicar (int numeroOperandos, int operando1, int operando2)
-	
-	COMENTARIO: El programa multiplicará los operandos recibidos.
-	PRECONDICIONES: 
+    /*
+	CABECERA: public static double multiplicar (double numero1, double numero2) 
+	FUNCIONAMIENTO: devolvera el resultado de la multiplicacion de los operandos
 	ENTRADAS: numero de operandos con los que va a operar
-	SALIDAS: el resultado de la operacion
+	PRECONDICIONES: 
+	SALIDAS: resultado de la multiplicacion (real)
+	POSTCONDICIONES: 
 	ENTRADA/SALIDA:
-	POSTCONDICIONES: el resultado se envia al main, donde un subprograma que lo imprimirá en pantalla
-
-*/
-
-	public static double multiplicacion (double numero1, double numero2){
+    */
+	public static double multiplicar (double numero1, double numero2) {
 		
-		double resultado = 0;
+		double resultado = 0.0;
 		
-		resultado = numero1*numero2;
+		resultado = numero1 * numero2;
 			
 		return resultado;
-		
 	}
 	
-	public static double potencia (double base, int exponente){
+    /*
+	CABECERA: public static double potencia (double base, int exponente)
+	FUNCIONAMIENTO: devolvera el resultado de elevar el exponente a la base
+	ENTRADAS: base y exponente (real) (entero)
+	PRECONDICIONES: 
+	SALIDAS: resultado de la elevacion (real)
+	POSTCONDICIONES: 
+	ENTRADA/SALIDA:
+    */
+	public static double potencia (double base, int exponente) {
+		
 		double resultado=1.0;
 		
-	//	resultado=Math.pow(base, exponente);
-		
 		int i;
-		for(i=0;i<exponente;i++){
-			resultado*= base;
+		for(i=0; i<exponente; i++) {
+			resultado *= base;
 		}
 		
 		return resultado;
 	}
 	
-	public static double raizCuadrada(double radicando){
-		double resultado=0.0;
+    /*
+	CABECERA: public static double raizCuadrada(double radicando)
+	FUNCIONAMIENTO: devolvera el resultado de calcular la raiz cuadrada de un radicando
+	ENTRADAS: radicando (real)
+	PRECONDICIONES: 
+	SALIDAS: resultado de la elevacion (real)
+	POSTCONDICIONES: 
+	ENTRADA/SALIDA:
+    */
+	public static double raizCuadrada(double radicando) {
 		
-		System.out.println("El radicando es"+radicando);
+		double resultado=0.0;
 		
 		return resultado;
 	}
