@@ -6,7 +6,7 @@ import OperacionesAritmeticas.*;
 import OperacionesTrigonometricas.*;
 import OperacionesLeyDeOhm.*;
 
-
+//
 /*ASIGNACION DE MODULOS
  * 
  * ALE: SUMAR, DIVIDIR, SUMATORIO, TANGENTE, COTANGENTE

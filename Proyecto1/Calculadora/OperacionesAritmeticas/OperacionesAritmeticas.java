@@ -21,7 +21,7 @@ public class OperacionesAritmeticas
 		return resultado;
 	}
 
-    /*
+    /*/
 	CABECERA: public static double resta (double numero1, double numero2)
 	FUNCIONAMIENTO: devolvera el resultado de la resta de los numeros
 	ENTRADAS: numero1 y numero2 (real) (real)

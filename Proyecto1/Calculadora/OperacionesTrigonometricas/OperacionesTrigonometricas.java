@@ -45,7 +45,7 @@ public class OperacionesTrigonometricas
 	 */
 	
 	public static double tangente(double numero){
-		
+		//
 		double resultado=0;
 		
 		resultado=Math.tan(numero);
