@@ -66,6 +66,7 @@ import OperacionesLeyDeOhm.*;
   
  ----------NIVEL DOS: OPERACIONES ARITMETICAS------------
  CASO 1: 
+ 	MOSTRAR MENU Y VALIDAR OPCION ARITMETICAS
  	SI OPCION ES DISTINTO A SALIR  					
 		SEGUN OPCION		
 			CASO 0: SALIR
@@ -81,6 +82,7 @@ import OperacionesLeyDeOhm.*;
   
  ----------NIVEL DOS: OPERACIONES TRIGONOMETRICAS------------
  CASO 2: 
+ 	MOSTRAR MENU Y VALIDAR OPCION TRIGONOMETRICAS
 	SI OPCION ES DISTINTO A SALIR	
 		SEGUN OPCION		
 			CASO 0: SALIR
@@ -95,6 +97,7 @@ import OperacionesLeyDeOhm.*;
 	
  ----------NIVEL DOS: OPERACIONES LEY DE OHM------------
  CASO 3: 
+ 	MOSTRAR MENU Y VALIDAR OPCION LEY DE OHM
  	SI OPCION ES DISTINTO A SALIR  					
 		SEGUN OPCION		
 			CASO 0: SALIR
@@ -248,10 +251,10 @@ public class Main {
 							System.out.println("Introduzca el angulo :");
 							numero1=teclado.nextDouble();
 							resultado=OperacionesTrigonometricas.tangente(numero1);
-							if(resultado!=-2)
+							//if(resultado!=-2)
 							System.out.println("El resultado es : "+resultado);
-							else
-								System.out.println("La tangente es infinita");
+							//else
+							//	System.out.println("La tangente es infinita");
 							break;
 							
 						//COSECANTE
