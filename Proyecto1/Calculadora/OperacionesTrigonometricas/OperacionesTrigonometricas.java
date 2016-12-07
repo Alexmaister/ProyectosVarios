@@ -6,103 +6,134 @@ public class OperacionesTrigonometricas
 	
 	double PI =3.1416;
 	/*CABECERA: double coseno(double numero)
-	 * DESCRIPCION:
-	 * ENTRADAS:
-	 * PRECONDICIONES:
-	 * SALIDAS:
-	 * POSTCONDICIONES:
+	 * DESCRIPCION:Funcion que calcula el coseno de un angulo
+	 * ENTRADAS:Un numero real
+	 * PRECONDICIONES:Ninguna
+	 * SALIDAS:numero real
+	 * POSTCONDICIONES:El resultado estara entre 0 o 1, 0 si no se pudo calcular, se devolvera asociado al nombre
 	 */
 	public static double coseno(double numero){
 		double resultado=0;
 		numero=convertirRadianes(numero);
-		resultado=Math.cos(numero);
-		
+		if(numero!=-1)
+			resultado=Math.cos(numero);
+		else
+			resultado=0;
+		if(resultado<0 || resultado>1)
+			resultado=0;
 		return resultado;
 		
 	}
 	
 	
 	/*CABECERA: double seno(double numero)
-	 * DESCRIPCION:
-	 * ENTRADAS:
-	 * PRECONDICIONES:
-	 * SALIDAS:
-	 * POSTCONDICIONES:
+	* DESCRIPCION:Funcion que calcula el seno de un angulo
+	 * ENTRADAS:Un numero real
+	 * PRECONDICIONES:Ninguna
+	 * SALIDAS:numero real
+	 * POSTCONDICIONES:El resultado estara entre 0 o 1, 0 si no se pudo calcular, se devolvera asociado al nombre
 	 */
 	
 	public static double seno(double numero){
 		
 		double resultado=0;
 		numero=convertirRadianes(numero);
-		resultado=Math.sin(numero);
+		if(numero!=-1)
+			resultado=Math.sin(numero);
+		else
+			resultado=0;
+		
 		return resultado;
 	} 
 	
 	/*CABECERA: double tangente(double numero)
-	 * DESCRIPCION:
-	 * ENTRADAS:
-	 * PRECONDICIONES:
-	 * SALIDAS:
-	 * POSTCONDICIONES:
+	* DESCRIPCION:Funcion que calcula la tangente de un angulo
+	 * ENTRADAS:Un numero real
+	 * PRECONDICIONES:Ninguna
+	 * SALIDAS:numero real
+	 * POSTCONDICIONES:El resultado estara entre 0 o 1, -1 si no se pudo calcular,y -2 si el angulo es de 90 grados se devolvera asociado al nombre
 	 */
 	
 	public static double tangente(double numero){
-		//
-		double resultado=0;
-		numero=convertirRadianes(numero);
-		resultado=Math.tan(numero);
 		
+		double resultado=0;
+		if(numero!=90){
+		numero=convertirRadianes(numero);
+		if(numero!=-1)
+			resultado=Math.tan(numero);
+		else
+			resultado=-1;
+		}else
+			resultado=-2;
 		return resultado;
 	}
 	
 	/*CABECERA: double cosecante(double numero)
-	 * DESCRIPCION:
-	 * ENTRADAS:
-	 * PRECONDICIONES:
-	 * SALIDAS:
-	 * POSTCONDICIONES:
+	 * DESCRIPCION:Funcion que calcula la cosecante de un angulo
+	 * ENTRADAS:Un numero real
+	 * PRECONDICIONES:Ninguna
+	 * SALIDAS:numero real o string
+	 * POSTCONDICIONES:El resultado estara entre 0 o 1, -1 si no se pudo calcular y -2 si el valor es infinito se devolvera asociado al nombre
 	 */
 	
 	public static double cosecante(double numero){
 		
 		double resultado=0;
+		if(numero!=90){
 		numero=convertirRadianes(numero);
-		resultado=Math.acos(numero);
 		
+		if(numero!=-1)
+			
+			resultado=(double)1/seno(numero);
+		else 
+			resultado=-1;
+		if(resultado>1)
+			resultado=-2;
+		}else
+			resultado=1;
 		return resultado;
 	} 
 	
 	/*CABECERA: double secante(double numero)
-	 * DESCRIPCION:
-	 * ENTRADAS:
-	 * PRECONDICIONES:
-	 * SALIDAS:
-	 * POSTCONDICIONES:
+	* DESCRIPCION:Funcion que calcula la secante de un angulo
+	 * ENTRADAS:Un numero real
+	 * PRECONDICIONES:Ninguna
+	 * SALIDAS:numero real
+	 * POSTCONDICIONES:El resultado estara entre 0 o 1, -1 si no se pudo calcular y-2 si el valor es infinito ,se devolvera asociado al nombre
 	 */
 	
 	public static double secante (double numero){
 		
 		double resultado=0;
 		numero=convertirRadianes(numero);
-		resultado=Math.asin(numero);
-		
+		if(numero!=-1)
+			resultado=1/coseno(numero);
+		else
+			resultado=-1;
+		if(resultado>1)
+			resultado=-2;
 		return resultado;
 	}
 	
 	/*CABECERA: double cotangente(double numero)
-	 * DESCRIPCION:
-	 * ENTRADAS:
-	 * PRECONDICIONES:
-	 * SALIDAS:
-	 * POSTCONDICIONES:
+	 * DESCRIPCION:Funcion que calcula la cotangete de un angulo
+	 * ENTRADAS:Un numero real
+	 * PRECONDICIONES:Ninguna
+	 * SALIDAS:numero real
+	 * POSTCONDICIONES:El resultado estara entre 0 o 1, -1 si no se pudo calcular, se devolvera asociado al nombre
 	 */
 	
 	public static double cotangente (double numero){
 		
 		double resultado=0;
+		if(numero!=90 && numero!=360){
 		numero=convertirRadianes(numero);
-		resultado=Math.atan(numero);
-		
+		if(numero!=-1)
+			resultado=1/tangente(numero);
+		else
+			resultado=0;
+		}else
+			resultado=0;
 		return resultado;
 	}
 	
@@ -123,8 +154,9 @@ public class OperacionesTrigonometricas
 		
 		if(numero>=0 && numero<=360){
 			
-			resultado=(numero*PI)/180;
-		}
+			resultado=(numero*PI)/180.0;
+		}else
+			resultado=-1;
 		return resultado;
 	}
 	

@@ -105,8 +105,8 @@ public class MenusyValidaciones {
 		System.out.println("1--SENO");
 		System.out.println("2--COSENO");
 		System.out.println("3--TANGENTE");
-		System.out.println("4--SECANTE");
-		System.out.println("5--COSECANTE");
+		System.out.println("4--COSECANTE");
+		System.out.println("5--SECANTE");
 		System.out.println("6--COTANGENTE");
 		
 		int opcionT=0;

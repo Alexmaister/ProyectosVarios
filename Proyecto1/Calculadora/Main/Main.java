@@ -115,7 +115,6 @@ public class Main {
 		int opcionSubmenu = 0;  
 		
 		Scanner teclado=new Scanner(System.in);
-		int numeroOperandos = 0;
 		
 		double resultado = 0.0;
 		double numero1 = 0.0;
@@ -163,7 +162,7 @@ public class Main {
 								System.out.println("\nIntroduce el segundo sumando");	
 								numero2=teclado.nextDouble();
 								resultado = OperacionesAritmeticas.suma(numero1, numero2);
-								
+								System.out.println("El resultado es : "+resultado);
 								break;
 							//CASO 2: RESTAR
 							case 2:
@@ -172,6 +171,7 @@ public class Main {
 								System.out.println("Introduce el segundo numero");
 								numero2=teclado.nextDouble();
 								resultado =  OperacionesAritmeticas.resta(numero1, numero2);
+								System.out.println("El resultado es : "+resultado);
 								break;
 							//CASO 3: MULTIPLICAR
 							case 3:
@@ -180,7 +180,7 @@ public class Main {
 								System.out.println("\nIntroduce el segundo numero");	
 								numero2=teclado.nextDouble();
 								resultado =  OperacionesAritmeticas.multiplicar(numero1, numero2);
-								
+								System.out.println("El resultado es : "+resultado);
 								break;
 							//CASO 4: DIVIDIR
 							case 4:
@@ -189,6 +189,7 @@ public class Main {
 								System.out.println("Introduzca el divisor");	
 								divisor=teclado.nextInt();
 								resultado =  OperacionesAritmeticas.dividir(dividendo,divisor);
+								System.out.println("El resultado es : "+resultado);
 								break;
 								
 							//CASO 5: RAIZ CUADRADA
@@ -196,6 +197,7 @@ public class Main {
 								System.out.println("Introduzca el radicando");	
 								radicando=teclado.nextInt();
 								resultado = OperacionesAritmeticas.raizCuadrada(radicando);
+								System.out.println("El resultado es : "+resultado);
 								break;
 							//CASO 6: POTENCIA
 							case 6:
@@ -204,18 +206,19 @@ public class Main {
 								System.out.println("Introduzca el exponente");	
 								exponente=teclado.nextInt();
 								resultado =  OperacionesAritmeticas.potencia(base, exponente);
-								
+								System.out.println("El resultado es : "+resultado);
 								break;
 							//CASO 7: SUMATORIO
 							case 7:
 								System.out.println("Introduzca el numero al que desea calcularle el sumatorio");	
 								numeroSumatorio=teclado.nextInt();
 								resultado =  OperacionesAritmeticas.sumatorio(numeroSumatorio);
+								System.out.println("El resultado es : "+resultado);
 								break;
 						}//FIN SEGUN
 					}//FIN SI 
 					
-					
+					break;
 				//CASO 2: OPERACIONES TRIGONOMETRICAS
 				case 2: 
 					opcionSubmenu = MenusyValidaciones.mostraryValidarMenuTrigonometria();
@@ -226,32 +229,59 @@ public class Main {
 						
 						//COSENO
 						case 1:
-							
+							System.out.println("Introduzca el angulo :");
+							numero1=teclado.nextDouble();
+							resultado=OperacionesTrigonometricas.coseno(numero1);
+							System.out.println("El resultado es : "+resultado);
 							break;
 							
 						//SENO
 						case 2:
-							
+							System.out.println("Introduzca el angulo :");
+							numero1=teclado.nextDouble();
+							resultado=OperacionesTrigonometricas.seno(numero1);
+							System.out.println("El resultado es : "+resultado);
 							break;
 						
 						//TANGENTE
 						case 3:
-							
+							System.out.println("Introduzca el angulo :");
+							numero1=teclado.nextDouble();
+							resultado=OperacionesTrigonometricas.tangente(numero1);
+							if(resultado!=-2)
+							System.out.println("El resultado es : "+resultado);
+							else
+								System.out.println("La tangente es infinita");
 							break;
 							
 						//COSECANTE
 						case 4:
-							
+							System.out.println("Introduzca el angulo :");
+							numero1=teclado.nextDouble();
+							resultado=OperacionesTrigonometricas.cosecante(numero1);
+							if(resultado!=-2)
+							System.out.println("El resultado es : "+resultado);
+							else
+								System.out.println("El valor es infinito");
 							break;
 							
 						//SECANTE
 						case 5 :
-							
+							System.out.println("Introduzca el angulo :");
+							numero1=teclado.nextDouble();
+							resultado=OperacionesTrigonometricas.secante(numero1);
+							if(resultado!=-2)
+								System.out.println("El resultado es : "+resultado);
+								else
+									System.out.println("El valor es infinito");
 							break;
 							
 						//COTANGENTE
 						case 6:
-							
+							System.out.println("Introduzca el angulo :");
+							numero1=teclado.nextDouble();
+							resultado=OperacionesTrigonometricas.cotangente(numero1);
+							System.out.println("El resultado es : "+resultado);
 							break;
 						
 						
@@ -368,7 +398,7 @@ public class Main {
 			
 		}while(opcion!=0); 
 		
-		
-	}
+		teclado.close();
+	}//FIN
 
 }

@@ -96,7 +96,7 @@ public class OperacionesAritmeticas
     */
 	public static double potencia (double base, int exponente) {
 		
-		double resultado=0.0;
+		double resultado=1.0;
 		
 		int i;
 		if ( (exponente != 0 && base != 0) || (base != 0 || exponente != 0) )
@@ -130,6 +130,8 @@ public class OperacionesAritmeticas
 		
 		double resultado=0.0;
 		
+		resultado=Math.sqrt(radicando);
+		
 		return resultado;
 	}
 	
@@ -145,7 +147,10 @@ public class OperacionesAritmeticas
 public static int sumatorio (int numeroSumatorio){
 	int resultado=0;
 	
-	System.out.println("El numero al que va a calcularle el sumatorio es: "+numeroSumatorio);
+	for(int i=1;i<=numeroSumatorio;i++){
+		
+		resultado+=i;
+	}
 	
 	return resultado;		
 }
