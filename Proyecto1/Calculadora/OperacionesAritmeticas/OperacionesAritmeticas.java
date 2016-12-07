@@ -126,14 +126,14 @@ public class OperacionesAritmeticas
 	POSTCONDICIONES: 
 	ENTRADA/SALIDA:
     */
-	public static double raizCuadrada(double radicando) {
+	/*public static double raizCuadrada(double radicando) {
 		
 		double resultado=0.0;
 		
 		resultado=Math.sqrt(radicando);
 		
 		return resultado;
-	}
+	}*/
 	
     /*
 	CABECERA: public static double raizCuadrada(double radicando)
