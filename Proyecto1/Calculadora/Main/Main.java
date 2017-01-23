@@ -199,7 +199,7 @@ public class Main {
 							case 5:
 								System.out.println("Introduzca el radicando");	
 								radicando=teclado.nextInt();
-								resultado = OperacionesAritmeticas.raizCuadrada(radicando);
+								//resultado = OperacionesAritmeticas.raizCuadrada(radicando);
 								System.out.println("El resultado es : "+resultado);
 								break;
 							//CASO 6: POTENCIA
